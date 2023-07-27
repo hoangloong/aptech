@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Document</title>
+  </head>
+  <script src="./scripts/login.js"></script>
+  <body>
+    <div class="login">
+      <form id="loginForm" class="">
+        <div class="form-field">
+          <label for="username">Username</label>
+          <input type="text" required name="username" id="username" />
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" required name="password" id="password" />
+        </div>
+
+        <button onclick="handleLogin(event)" type="submit">Đăng nhập</button>
+      </form>
+    </div>
+  </body>
+</html>

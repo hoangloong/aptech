@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .card {
+      width: 400px;
+    }
+    p {
+      background: #000;
+      color: white;
+      padding: 1rem;
+    }
+    .hidden {
+      display: none;
+    }
+    /* .visible {
+      display: block;
+    } */
+  </style>
+  <script>
+    function hover() {
+      const img = document.getElementById("img");
+      img.classList.toggle("hidden");
+    }
+    function mouseLeave() {
+      const img = document.getElementById("img");
+      img.classList.toggle("hidden");
+    }
+    function clickimg() {
+      console.log("img");
+    }
+  </script>
+  <body>
+    <div style="display: flex; gap: 1rem">
+      <div class="card">
+        <p onmouseenter="hover()" onmouseleave="mouseLeave()">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+          placeat repellat incidunt totam illum saepe, harum cupiditate ex,
+          veritatis exercitationem fugiat maiores ut commodi sed odio blanditiis
+          qui voluptates porro.
+        </p>
+      </div>
+      <img
+        onclick="clickimg()"
+        width="400px"
+        id="img"
+        class="hidden"
+        src="./assets/photo-1575936123452-b67c3203c357.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

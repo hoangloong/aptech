@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="form">
+    <form action="" class="form-container">
+      <div class="form-field">
+        <label for="full_name">Họ và tên</label>
+        <input
+          autocomplete="off"
+          id="full_name"
+          type="text"
+          placeholder="Họ và tên"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input autocomplete="off" id="email" type="email" placeholder="Email" />
+      </div>
+
+      <div class="form-field">
+        <label for="interest">Chủ đề quan tâm</label>
+        <select name="" id="interest">
+          <option selected value="1">HTML & CSS</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="main-content">Nội dung</label>
+        <textarea id="main-content" rows="10" placeholder="Nội dung"></textarea>
+      </div>
+
+      <div class="form-field">
+        <button type="submit">Gửi</button>
+      </div>
+    </form>
+  </body>
+</html>
