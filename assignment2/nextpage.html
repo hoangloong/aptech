@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Document</title>
+  </head>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./scripts/nextpage.js"></script>
+  <body>
+    <div class="nextpage">
+      <div class="section">
+        <span class="title">Student management</span>
+        <form onsubmit="handleClickAdd(event)" id="studentForm">
+          <table class="border-none">
+            <tr>
+              <td style="text-align: right">
+                <label class="required font-small" for="fullname"
+                  >Student Name</label
+                >
+              </td>
+              <td>
+                <input
+                  required
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Input student name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                <label class="required font-small" for="dob">Student DOB</label>
+              </td>
+              <td>
+                <input required type="date" name="dob" id="dob" />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                <label class="required font-small" for="gender"
+                  >Student Gender</label
+                >
+              </td>
+              <td style="display: flex; align-items: center">
+                <input type="radio" value="Male" name="gender" id="male" />
+                <label for="male">Male</label>
+                <input type="radio" value="Female" name="gender" id="female" />
+                <label for="female">Female</label>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                <label class="required font-small" for="language"
+                  >Student Language</label
+                >
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="language"
+                  id="EN"
+                  value="English"
+                />
+                <label for="EN">English</label>
+                <input
+                  type="checkbox"
+                  name="language"
+                  id="VI"
+                  value="Vietnamese"
+                />
+                <label for="VI">Vietnamese</label>
+                <input
+                  type="checkbox"
+                  name="language"
+                  id="JP"
+                  value="Japanese"
+                />
+                <label for="JP">Japanese</label>
+                <input
+                  type="checkbox"
+                  name="language"
+                  id="CN"
+                  value="Chinese"
+                />
+                <label for="CN">Chinese</label>
+                <input type="checkbox" name="language" id="FR" value="French" />
+                <label for="FR">French</label>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                <label class="required font-small" for="class"
+                  >Student Class</label
+                >
+              </td>
+              <td>
+                <select name="class" id="class">
+                  <option value="C1608G">C1608G</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button style="width: fit-content" type="submit">Add</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="section">
+        <span class="title">Student List</span>
+        <table id="student-list">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Class</th>
+              <th>DOB</th>
+              <th>Gender</th>
+              <th>Language</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
