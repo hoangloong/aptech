@@ -14,6 +14,7 @@ isAuth = () => {
 };
 
 handleLogin = (e) => {
+  e.preventDefault();
   const loginForm = document.getElementById("loginForm");
 
   if (loginForm.username.value && loginForm.password.value) {
@@ -30,5 +31,4 @@ handleLogin = (e) => {
   } else {
     alert("Yêu cầu nhập 'Tên đăng nhập' và 'Mật khẩu'");
   }
-  e.preventDefault();
 };
